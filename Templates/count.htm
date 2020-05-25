@@ -1,0 +1,16 @@
+<h1>Here is your full text </h1>
+{{ mytext }}
+
+<h1>Total length of your text is:</h1>
+     <b>{{length}}</b>
+
+<a href="{% url 'home'%}">Start again</a>
+
+<h1>REPEATETIONs ARE </h1>
+
+{% for word , count in worddictionary %}
+
+{{word}}-{{count}}
+<br>
+
+{% endfor %}
